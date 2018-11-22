@@ -1,0 +1,27 @@
+{
+  "name": "greenball-inventory-upload",
+  "version": "1.0.0",
+  "description": "upload inventory data to occ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js",
+    "build": "babel src —-out-dir dist",
+    "serve": "node dist/index.js"
+  },
+  "author": "Yeshwanth Dornala",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "csv-writer": "^1.2.0",
+    "read-excel-file": "^2.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest-node": "^2.0.0-beta.3"
+  }
+}
